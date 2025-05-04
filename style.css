@@ -1,0 +1,170 @@
+#pokemonSprite {
+    position: relative;
+    z-index: 9999; 
+  }
+  
+  
+  body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #70D7EA;
+      color: white;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #FFC7C2;
+      font-size: 2em;
+    }
+    
+    .based-on {
+      background-color: #FFECBD;
+      padding: 10px;
+      border-radius: 8px;
+      color: #FECAE6;
+      margin-bottom: 10px;
+    }
+    
+    .based-on a {
+      color: #FECAE6;
+      text-decoration: none;
+    }
+    
+    .image-source {
+      background-color: #3DADFF;
+      color: #794BD3;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    
+    .image-source a {
+      color: #794BD3;
+      text-decoration: none;
+    }
+    
+    .kirby-image {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+    }
+    
+    .story {
+      white-space: pre-line;
+      color: #E3E687;
+      font-size: 1.1em;
+      margin: 30px 40px;
+    }
+    
+    .footer-text {
+      text-align: center;
+      color: #FFC2EC;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    
+    /* Button */
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #FECAE6;
+      color: #794BD3;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #FFC7C2;
+    }
+    
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .modal-content {
+      background-color: #FFECBD;
+      color: #794BD3;
+      padding: 30px;
+      border-radius: 12px;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+    }
+    
+    .close-btn {
+      background-color: #794BD3;
+      color: #FFF;
+      margin-top: 20px;
+    }
+  
+    /* Dark Mode */
+  body.dark-mode {
+    background-color: #286B85; /* deep teal */
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode h1 {
+    color: #D9927C; /* muted peach */
+  }
+  
+  body.dark-mode .based-on {
+    background-color: #B89B63; /* warm tan */
+    color: #B26D91; /* dusty rose */
+  }
+  
+  body.dark-mode .based-on a {
+    color: #B26D91; /* dusty rose */
+  }
+  
+  body.dark-mode .image-source {
+    background-color: #245C8E; /* deep blue */
+    color: #503088; /* deep violet */
+  }
+  
+  body.dark-mode .image-source a {
+    color: #503088; /* deep violet */
+  }
+  
+  body.dark-mode .story {
+    color: #B3B657; /* muted yellow-green */
+  }
+  
+  body.dark-mode .footer-text {
+    color: #C183AE; /* rose */
+  }
+  
+  body.dark-mode button {
+    background-color: #B26D91; /* dusty rose */
+    color: #503088; /* deep violet */
+  }
+  
+  body.dark-mode button:hover {
+    background-color: #D9927C; /* muted peach */
+  }
+  
+  body.dark-mode .modal-content {
+    background-color: #B89B63; /* warm tan */
+    color: #503088; /* deep violet */
+  }
+  
+  body.dark-mode .close-btn {
+    background-color: #503088; /* deep violet */
+    color: #FFF;
+  }
+  
