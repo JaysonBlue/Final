@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kirby's Beach Trip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Kirby's Beach Trip</h1>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <div>
+      <div class="based-on">
+        <a href="https://www.youtube.com/watch?v=slkvuh2KOWg" target="_blank">Based On</a>
+      </div>
+      <div class="image-source">
+        <a href="https://www.reddit.com/r/wallpaper/comments/rp3izn/kirby_floating_1920x1080/?rdt=33955" target="_blank">
+          Image Source. Artist Deleted Socials
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <img src="./Images/NewKirbyindawada.jpeg" alt="Kirby at the beach" class="kirby-image">
+
+  <div class="story">
+    It was a sunny afternoon in Dreamland, and Kirby was on a mission that day. Today, he was going to spend his day at the beach! 
+    The sand was soft and warm, like a heated blanket. The waves crashed with a "shhhhhh" sound as they brushed to the shore and tickled at Kirby's feet. The sound was gentle enough to lull him into the comfiest naps. 
+    The gentle waves carried Kirby out, out, out - not too far, just far enough. The water was calm and shimmered under the shining sun. 
+    Kirby floated, his arms and legs spread wide as the water rocked him like a cradle while the seagulls flying high above sang their songs. It's as if the whole beach was singing a lullaby just for him. 
+    As the sky turned orange, Kirby began to drift back to shore. After drying himself off, Kirby watched the sunset and witnessed the stars slowly begin to illuminate themselves in the endless sky. 
+    Tomorrow brings new adventures, but tonight, Kirby drifts to sleep wrapped in the sea's hush and the stars' comfort.
+  </div>
+
+  <div class="footer-text">
+    I can't wait for summer
+  </div>
+
+  <button onclick="showModal()">About This Project</button>
+
+  <div id="aboutModal" class="modal">
+    <div class="modal-content">
+      <h2>About This Project</h2>
+      <p>This is my final for Programming for the Web. This website was inspired on the "It's Kirby Time" book series written by Asami Taniguchi and illustrated by HYOGONOSUKE.</p>
+      <button class="close-btn" onclick="hideModal()">Close</button>
+    </div>
+  </div>
+
+  <!-- Pokemon Fetch Section -->
+  <div class="pokemon-section">
+    <h2>Find a Pokémon until (until Gen 7)</h2>
+    <input type="text" id="pokemonName" placeholder="Enter Pokémon Name">
+    <button onclick="fetchData()">Fetch Pokémon</button><br>
+    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display:none">
+  </div>
+
+  <script src="index.js"></script>
+  <script>
+    function showModal() {
+      document.getElementById('aboutModal').style.display = 'flex';
+    }
+
+    function hideModal() {
+      document.getElementById('aboutModal').style.display = 'none';
+    }
+
+    document.getElementById('darkModeToggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+</html>
